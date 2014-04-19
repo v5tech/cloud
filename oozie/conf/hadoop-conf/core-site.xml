@@ -39,22 +39,22 @@
         <value>yarn</value>
     </property>
 
-	<property>
+    <property>
         <name>yarn.resourcemanager.address</name>
         <value>master:8032</value>
     </property>
 
-	<property>
+    <property>
         <name>yarn.resourcemanager.scheduler.address</name>
         <value>master:8030</value>
     </property>
 
-	<property>
+    <property>
         <name>mapreduce.jobhistory.address</name>
         <value>master:10020</value>
     </property>
 
-	<property>
+    <property>
         <name>mapreduce.jobhistory.webapp.address</name>
         <value>master:19888</value>
     </property>

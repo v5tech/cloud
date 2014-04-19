@@ -25,28 +25,32 @@
         <name>yarn.resourcemanager.hostname</name>
         <value>master</value>
     </property>
-	<property>
+    <property>
         <name>yarn.resourcemanager.address</name>
         <value>master:8032</value>
     </property>
-	<property>
+    <property>
         <name>yarn.resourcemanager.scheduler.address</name>
         <value>master:8030</value>
     </property>
-	<property>
+    <property>
         <name>yarn.resourcemanager.webapp.address</name>
         <value>master:8088</value>
     </property>
-	<property>
+    <property>
         <name>yarn.resourcemanager.webapp.https.address</name>
         <value>master:8090</value>
     </property>
-	<property>
+    <property>
         <name>yarn.resourcemanager.resource-tracker.address</name>
         <value>master:8031</value>
     </property>
-	<property>
+    <property>
         <name>yarn.resourcemanager.admin.address</name>
         <value>master:8033</value>
+    </property>
+    <property>
+        <name>yarn.log-aggregation-enable</name>
+        <value>true</value>
     </property>
 </configuration>
