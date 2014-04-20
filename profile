@@ -37,6 +37,7 @@ export GOROOT=/opt/go
 export GOPATH=/opt/gowork
 export NODE_HOME=/opt/node
 
+export HADOOP_HOME=/opt/hadoop-2.2.0
 export HADOOP_PREFIX=/opt/hadoop-2.2.0
 export HADOOP_COMMON_HOME=$HADOOP_PREFIX
 export HADOOP_HDFS_HOME=$HADOOP_PREFIX
@@ -53,7 +54,14 @@ export HUE_HOME=/opt/hue
 
 export SQOOP_HOME=/opt/sqoop-1.99.3
 
-export PATH=$SQOOP_HOME/bin:$HUE_HOME/build/env/bin:$NODE_HOME/bin:$GOROOT/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$M2_HOME/bin:$HADOOP_PREFIX/bin:$HADOOP_PREFIX/sbin:$HIVE_HOME/bin:$PATH
+export OOZIE_HOME=/opt/oozie-4.0.0
 
+export HBASE_HOME=/opt/hbase-0.98.0
 
+export PIG_HOME=/opt/pig-0.12.1
 
+export PIG_CLASSPATH=$HADOOP_PREFIX/etc/hadoop
+
+export ZOOKEEPER_HOME=/opt/zookeeper-3.4.6
+
+export PATH=$PIG_HOME/bin:$HBASE_HOME/bin:$OOZIE_HOME:/bin:$SQOOP_HOME/bin:$HUE_HOME/build/env/bin:$NODE_HOME/bin:$GOROOT/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$M2_HOME/bin:$HADOOP_PREFIX/bin:$HADOOP_PREFIX/sbin:$HIVE_HOME/bin:$ZOOKEEPER_HOME/bin:$PATH
