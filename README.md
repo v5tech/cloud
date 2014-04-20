@@ -23,3 +23,6 @@
 
 
 ### zookeeper-3.4.6
+
+
+具体搭建过程见[http://aimeizi.net](http://aimeizi.net)
