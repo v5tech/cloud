@@ -2019,5 +2019,10 @@
    </description>
 </property>
 
+<property>
+   <name>hive.aux.jars.path</name>
+   <value>file:///opt/hive-0.12.0/lib/hive-contrib-0.12.0.jar</value>
+   <description>This JAR file  available to all users for all jobs</description>
+</property>
 
 </configuration>

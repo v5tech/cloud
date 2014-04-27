@@ -29,7 +29,7 @@
 export JAVA_HOME=/opt/jdk1.7.0_51
 
 # Extra Java CLASSPATH elements.  Optional.
-# export HBASE_CLASSPATH=
+# export HBASE_CLASSPATH=/opt/hadoop-2.2.0/etc/hadoop
 
 # The maximum amount of heap to use, in MB. Default is 1000.
 # export HBASE_HEAPSIZE=1000

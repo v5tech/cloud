@@ -30,6 +30,7 @@ if [ -d /etc/profile.d ]; then
 fi
 
 export JAVA_HOME=/opt/jdk1.7.0_51
+export CLASS_PATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JAVA_HOME/jre/lib/rt.jar
 export ANT_HOME=/opt/ant-1.9.3
 export M2_HOME=/opt/maven-3.0.5
 export MAVEN_OPTS="-Xms256m -Xmx512m"
@@ -47,7 +48,6 @@ export HADOOP_CONF_DIR=$HADOOP_PREFIX/etc/hadoop
 
 export HADOOP_CLASSPATH=/opt/hadoop-2.2.0/share/hadoop/common/*.jar:/opt/hadoop-2.2.0/share/hadoop/common/lib/*.jar:/opt/hadoop-2.2.0/share/hadoop/hdfs/*.jar:/opt/hadoop-2.2.0/share/hadoop/hdfs/lib/*.jar:/opt/hadoop-2.2.0/share/hadoop/mapreduce/*.jar:/opt/hadoop-2.2.0/share/hadoop/mapreduce/lib/*.jar:/opt/hadoop-2.2.0/share/hadoop/tools/lib/*.jar:/opt/hadoop-2.2.0/share/hadoop/yarn/*.jar:/opt/hadoop-2.2.0/share/hadoop/yarn/lib/*.jar:$HADOOP_CLASSPATH
 
-
 export HIVE_HOME=/opt/hive-0.12.0
 
 export HUE_HOME=/opt/hue
@@ -64,4 +64,10 @@ export PIG_CLASSPATH=$HADOOP_PREFIX/etc/hadoop
 
 export ZOOKEEPER_HOME=/opt/zookeeper-3.4.6
 
-export PATH=$PIG_HOME/bin:$HBASE_HOME/bin:$OOZIE_HOME:/bin:$SQOOP_HOME/bin:$HUE_HOME/build/env/bin:$NODE_HOME/bin:$GOROOT/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$M2_HOME/bin:$HADOOP_PREFIX/bin:$HADOOP_PREFIX/sbin:$HIVE_HOME/bin:$ZOOKEEPER_HOME/bin:$PATH
+export FLUME_HOME=/opt/flume-1.4.0
+
+export PHOENIX_HOME=/opt/phoenix-4.0.0
+
+export CLASS_PATH=$CLASS_PATH:$PHOENIX_HOME/hadoop-2/phoenix-4.0.0-incubating-client.jar
+
+export PATH=$PIG_HOME/bin:$HBASE_HOME/bin:$OOZIE_HOME:/bin:$SQOOP_HOME/bin:$HUE_HOME/build/env/bin:$NODE_HOME/bin:$GOROOT/bin:$JAVA_HOME/bin:$ANT_HOME/bin:$M2_HOME/bin:$HADOOP_PREFIX/bin:$HADOOP_PREFIX/sbin:$HIVE_HOME/bin:$ZOOKEEPER_HOME/bin:$FLUME_HOME/bin:$PHOENIX_HOME/bin:$PATH
