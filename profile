@@ -46,8 +46,6 @@ export HADOOP_MAPRED_HOME=$HADOOP_PREFIX
 export HADOOP_YARN_HOME=$HADOOP_PREFIX
 export HADOOP_CONF_DIR=$HADOOP_PREFIX/etc/hadoop
 
-export HADOOP_CLASSPATH=/opt/hadoop-2.2.0/share/hadoop/common/*.jar:/opt/hadoop-2.2.0/share/hadoop/common/lib/*.jar:/opt/hadoop-2.2.0/share/hadoop/hdfs/*.jar:/opt/hadoop-2.2.0/share/hadoop/hdfs/lib/*.jar:/opt/hadoop-2.2.0/share/hadoop/mapreduce/*.jar:/opt/hadoop-2.2.0/share/hadoop/mapreduce/lib/*.jar:/opt/hadoop-2.2.0/share/hadoop/tools/lib/*.jar:/opt/hadoop-2.2.0/share/hadoop/yarn/*.jar:/opt/hadoop-2.2.0/share/hadoop/yarn/lib/*.jar:$HADOOP_CLASSPATH
-
 export HIVE_HOME=/opt/hive-0.12.0
 
 export HUE_HOME=/opt/hue
