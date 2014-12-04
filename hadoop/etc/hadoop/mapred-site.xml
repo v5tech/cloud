@@ -23,6 +23,13 @@
         <final>true</final>
     </property>
     <property>
+        <name>mapreduce.application.classpath</name>
+        <value>
+        ${HADOOP_HOME}/share/hadoop/mapreduce/*,
+        ${HADOOP_HOME}/share/hadoop/mapreduce/lib/*
+        </value>
+    </property>    
+    <property>
         <name>mapreduce.jobhistory.address</name>
         <value>master:10020</value>
     </property>
